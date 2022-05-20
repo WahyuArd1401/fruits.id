@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Daftar Produk - UBMart E-Commerce</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <script src="keranjang.js"></script>
+   </head>
+
+   <body onload="loadKeranjang()">
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="media/logo.png" width="256px">
+            </div>
+            <nav>
+               <ul>
+                  <!-- Menu, Kanan Atas -->
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="produk.html">Belanja</a></li>
+                  <li><a href="profil.html">Profil</a></li>
+               </ul>
+            </nav>
+            <!-- Button Checkout -->
+            <img src="media/basket.png" width="30px" onclick="document.location='keranjang.html'">
+         </div>
+      </div>
+
+      <!--   Detail Barang   -->
+
+      <div class="small-container keranjang">
+         <table id="tabel-keranjang">
+            <!--   Kepala Tabel         -->
+            <tr style="background-color: darkblue">
+               <th>Produk</th>
+               <th>Jumlah</th>
+               <th>Subtotal</th>
+            </tr>
+
+            <!--   Data Produk         -->
+            <tr id="produk-1">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-1-c.png">
+                     <div>
+                        <h4>Brokoli</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(1)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(1)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-2">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-2-c.png">
+                     <div>
+                        <h4>Wortel</h4>
+                        <p><br></p>
+                        <p>Rp. 12.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(2)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(2)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-3">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-3-c.png">
+                     <div>
+                        <h4>Lobak Putih</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(3)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(3)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-4">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-4-c.png">
+                     <div>
+                        <h4>Buncis</h4>
+                        <p><br></p>
+                        <p>Rp. 20.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(4)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(4)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-5">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-5-c.png">
+                     <div>
+                        <h4>Kentang</h4>
+                        <p><br></p>
+                        <p>Rp. 12.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(5)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(5)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-6">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-6-c.png">
+                     <div>
+                        <h4>Tomat</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(6)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(6)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-7">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-7-c.png">
+                     <div>
+                        <h4>Kecipir</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(7)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(7)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-8">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-8-c.png">
+                     <div>
+                        <h4>Cabe Rawit</h4>
+                        <p><br></p>
+                        <p>Rp. 12.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(8)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(8)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-9">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-9-c.png">
+                     <div>
+                        <h4>Terong Ungu</h4>
+                        <p><br></p>
+                        <p>Rp. 14.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(9)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(9)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-10">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-10-c.png">
+                     <div>
+                        <h4>Timun</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(10)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(10)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-11">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-11-c.png">
+                     <div>
+                        <h4>Bawang Bombai</h4>
+                        <p><br></p>
+                        <p>Rp. 20.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(11)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(11)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-12">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-12-c.png">
+                     <div>
+                        <h4>Bawang Merah</h4>
+                        <p><br></p>
+                        <p>Rp. 25.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(12)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(12)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-13">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-13-c.png">
+                     <div>
+                        <h4>Bawang Putih</h4>
+                        <p><br></p>
+                        <p>Rp. 20.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(13)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(13)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-14">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-14-c.png">
+                     <div>
+                        <h4>Labu</h4>
+                        <p><br></p>
+                        <p>Rp. 25.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(14)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(14)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-15">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-15-c.png">
+                     <div>
+                        <h4>Pisang</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(15)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(15)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-16">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-16-c.png">
+                     <div>
+                        <h4>Lemon</h4>
+                        <p><br></p>
+                        <p>Rp. 18.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(16)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(16)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-17">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-17-c.png">
+                     <div>
+                        <h4>Buah Bit</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(17)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(17)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-18">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-18-c.png">
+                     <div>
+                        <h4>Belimbing</h4>
+                        <p><br></p>
+                        <p>Rp. 20.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(18)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(18)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-19">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-19-c.png">
+                     <div>
+                        <h4>Alpukat</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(19)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(19)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-20">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-20-c.png">
+                     <div>
+                        <h4>Pir</h4>
+                        <p><br></p>
+                        <p>Rp. 18.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(20)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(20)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-21">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-21-c.png">
+                     <div>
+                        <h4>Apel</h4>
+                        <p><br></p>
+                        <p>Rp. 25.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(21)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(21)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-22">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-22-c.png">
+                     <div>
+                        <h4>Stroberi</h4>
+                        <p><br></p>
+                        <p>Rp. 15.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(22)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(22)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-23">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-23-c.png">
+                     <div>
+                        <h4>Jeruk</h4>
+                        <p><br></p>
+                        <p>Rp. 20.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(23)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(23)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-24">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-24-c.png">
+                     <div>
+                        <h4>Bakso Sapi</h4>
+                        <p><br></p>
+                        <p>Rp. 40.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(24)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(24)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-25">
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/Gambar%20Produk/produk-25-c.png">
+                     <div>
+                        <h4>Sosis Ayam</h4>
+                        <p><br></p>
+                        <p>Rp. 30.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(25)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(25)"></td>
+               <td> temp </td>
+            </tr>
+
+
+            <tr id="produk-26"> <!--Produk Test 1-->
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/sampel.png">
+                     <div>
+                        <h4>Produk Test 1</h4>
+                        <p><br></p>
+                        <p>Rp. 100.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(26)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(26)"></td>
+               <td> temp </td>
+            </tr>
+
+            <tr id="produk-27"> <!--Produk Test 2-->
+               <td>
+                  <div class="produk-keranjang">
+                     <img src="media/sampel.png">
+                     <div>
+                        <h4>Produk Test 2</h4>
+                        <p><br></p>
+                        <p>Rp. 99.000</p>
+                     </div>
+                  </div>
+                  <a onclick="deleteProduk(27)" style="cursor: pointer">Hapus dari Keranjang</a>
+               </td>
+               <td><input type="number" min="0" value="1" onchange="ubahKuantitas(27)"></td>
+               <td> temp </td>
+            </tr>
+
+         </table>
+
+         <!--   Pembayaran         -->
+         <div id="menu-bayar">
+            <div class="total-bayar">
+               <table id="tabel-bayar">
+                  <tr>
+                     <td>Total Belanja</td>
+                     <td id="totalSubtotal"> temp </td>
+                  </tr>
+                  <tr>
+                     <td>Ongkos Kirim</td>
+                     <td id="totalOngkir"> temp </td>
+                  </tr>
+                  <tr>
+                     <td>Total Bayar</td>
+                     <td id="totalBayar"> temp </td>
+                  </tr>
+               </table>
+            </div>
+
+            <div class="tombol-bayar">
+               <a id="tombolBayar" class="bttn">Bayar Sekarang</a>
+            </div>
+         </div>
+
+         <!-- Popup Bayar -->
+         <div id="pop-up-bayar" class="modal">
+
+            <!-- Isi Box -->
+            <div class="modal-content">
+               <div>
+                  <div class="row-left">
+                     <h2>Metode Pembayaran</h2>
+                  </div>
+                  <div class="row-left">
+                     <select name="pembayaran" id="pembayaran" class="pilih-bayar">
+                        <option value="Gopay">Gopay</option>
+                        <option value="OVO">OVO</option>
+                        <option value="COD">Cash on Delivery</option>
+                     </select>
+                  </div>
+                  <div class="row-left">
+                     <h2>Alamat Pengiriman</h2>
+                  </div>
+                  <div class="row-left">
+                     <input type="text" placeholder="Tuliskan Alamat" id="alamat" class="pilih-bayar">
+                  </div>
+
+               </div>
+               <div>
+                  <div class="row-right">
+                     <a class="bttn" id="tombolBayarFinal">Selesaikan Pembayaran</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!--  Notif Keranjang Kosong       -->
+         <div id = "notif-kosong">
+            <h4 style="align-self: auto">Keranjang Saat Ini Kosong</h4>
+
+         </div>
+
+
+      </div>
+
+      <script> //Khusus pop-up
+         var modal = document.getElementById("pop-up-bayar");
+         var btn = document.getElementById("tombolBayar");
+
+         btn.onclick = function() { //show popup
+            modal.style.display = "block";
+         }
+
+         window.onclick = function(event) { //exit popup
+            if (event.target == modal) {
+               modal.style.display = "none";
+            }
+         }
+      </script>
+      
+      <script> //Khusus Pembayaran
+         var btn = document.getElementById("tombolBayarFinal");
+
+         btn.onclick = function() { //pembayaran selesai
+            let bayar = document.getElementById("pembayaran");
+            let pilihBayar = bayar.options[bayar.selectedIndex].text;
+            let alamat = document.getElementById("alamat").value;
+            
+            console.log(alamat);
+            
+            if(alamat == ""){
+               window.alert("Mohon Isi Alamat Pengiriman");
+            }else{
+               let total = document.getElementById("totalBayar").innerText;
+               window.alert("Metode Pembayaran: " + pilihBayar + "\nAlamat Pengiriman: " + alamat + "\nTotal Pembayaran: " + total);
+               deleteAllProduk();
+               window.alert("Pembayaran Berhasil");
+               document.getElementById("pop-up-bayar").style.display = "none";
+            }
+            
+            
+         }
+      </script>
+
+   </body>
+</html>

@@ -1,0 +1,4 @@
+Warna Button Mulai Belanja
+   #2b30c2, #4287f5
+Warna Background Menu Utama
+   #adfffe

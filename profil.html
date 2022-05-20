@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Daftar Produk - UBMart E-Commerce</title>
+      <link rel="stylesheet" href="style.css">
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="media/logo.png" width="256px">
+            </div>
+            <nav>
+               <ul>
+                  <!-- Menu, Kanan Atas -->
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="produk.html">Belanja</a></li>
+                  <li><a href="profil.html">Profil</a></li>
+               </ul>
+            </nav>
+            <!-- Button Checkout -->
+            <img src="media/basket.png" width="30px" onclick="document.location='keranjang.html'">
+         </div>
+      </div>
+
+      <!-- Login / Regis -->
+      <div class="profil">
+         <div class="container">
+            <div class="row">
+               <div class="col-2">
+                  <img src="media/ilustrasi-profil.png" width=80% style="padding: 0; min-width: 60%">
+               </div>
+               <div class="col-2">
+                  <div class="form-container">
+                     <div class="form-bttn">
+                        <span onclick="pickDaftar()">Daftar</span>
+                        <span onclick="pickMasuk()">Masuk</span>
+                        <hr id="Indicator">
+                     </div>
+                     <!-- Masuk -->
+                     <form id="FormMasuk">
+                        <input type="text" placeholder="Nama Pengguna">
+                        <input type="password" placeholder="Kata Sandi">
+                        <button class="bttn" onclick="document.location='produk.html'" type="button">Masuk</button>
+                        <a onclick="window.alert('Hubungi UBMart@gmail.com untuk bantuan')" style="cursor: pointer">Lupa Password</a>
+                     </form>
+                     <!-- Daftar -->
+                     <form id="FormDaftar">
+                        <input type="text" placeholder="Nama Pengguna">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Kata Sandi">
+                        <button class="bttn" onclick="document.location='produk.html'" type="button">Daftar</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!--Toggle Form-->
+      <script>
+         var FormMasuk = document.getElementById("FormMasuk");
+         var FormDaftar = document.getElementById("FormDaftar");
+         var Indicator = document.getElementById("Indicator");
+
+         function pickDaftar(){
+            FormDaftar.style.transform = "translateX(0px)";
+            FormMasuk.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(0px)";
+         }
+
+         function pickMasuk(){
+            FormDaftar.style.transform = "translateX(350px)";
+            FormMasuk.style.transform = "translateX(350px)";
+            Indicator.style.transform = "translateX(175px)";
+         }
+      </script>
+
+
+   </body>
+
+</html>
+
