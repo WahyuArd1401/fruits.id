@@ -1,0 +1,117 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Open Sans', sans-serif;
+}
+.navbar{
+   display: flex;
+   align-items: center;
+   padding: 20px 10px;
+}
+.navbar img{
+   cursor: pointer;
+}
+nav{
+   flex: 1;
+   text-align: right;
+}
+nav ul{
+   display: inline-block;
+   list-style-type: none
+}
+nav ul li{
+   display: inline-block;
+   margin-right: 30px;
+}
+a{
+   text-decoration: none;
+   color: dimgrey;
+}
+p{
+   color: dimgrey;
+}
+.container{
+   max-width: 1280px;
+   margin: auto;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+.row{
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.col-2{
+   flex-basis: 55%;
+   min-width: 300px;
+   margin-left: 30px;
+   margin-right: 20px;
+   text-align: justify;
+}
+.col-2_left{
+   float: left;
+   padding: 10px;
+   width: 30%;
+}
+.col-2_right{
+   float: left;
+   padding: 30px 10px 10px;
+   width: 70%;
+}
+.row_detail-produk{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.col-2_detail-produk{
+   display: flex
+   flex-basis: 50%;
+   max-width: 200px;
+   margin: 10px;
+   transition: transform 0.5s;
+}
+.col-2_detail-produk img{
+   display: flex;
+}
+.col-2_detail-produk h4{
+   padding-top: 10px;
+}
+.col-2_detail-produk:hover{
+   transform: translateY(-5px);
+   cursor: pointer;
+}
+
+/* Clear floats after the columns */
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.bttn{
+   display: inline-block;
+   background: #4287f5;
+   color: white;
+   padding: 8px 16px;
+   margin: 30px 0;
+   border-radius: 30px;
+   transition: background 0.5s;
+   font-size: 12px;
+}
+.bttn:hover{
+   background: #2b30c2;
+   cursor: pointer;
+}
+.header{
+   background: #adfffe; /* Warna Background Menu Utama*/
+}
+.title{
+   margin: 25px 10px 10px;
+   text-align: left;
+   font-size: 24px;
+}

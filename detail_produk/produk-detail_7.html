@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Daftar Produk - UBMart E-Commerce</title>
+      <link rel="stylesheet" href="style2.css">
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="../media/logo.png" width="256px">
+            </div>
+            <nav>
+               <ul>
+                  <!-- Menu, Kanan Atas -->
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../produk.html">Belanja</a></li>
+                  <li><a href="../profil.html">Profil</a></li>
+               </ul>
+            </nav>
+            <!-- Button Checkout -->
+            <img src="../media/basket.png" width="30px" onclick="document.location='../keranjang.html'">
+         </div>
+      </div>
+
+
+      <div class="row">
+         <!-- List Produk Kiri-->
+         <div class="col-2_left">
+            <h2 class="title">Produk Lain</h2>
+
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_1.html'">
+                  <img src="../media/Gambar%20Produk/produk-1-b.png" width="128">
+                  <h4>Brokoli</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_10.html'">
+                  <img src="../media/Gambar%20Produk/produk-10-b.png" width="128">
+                  <h4>Timun</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_9.html'">
+                  <img src="../media/Gambar%20Produk/produk-9-b.png" width="128">
+                  <h4>Terong Ungu</h4>
+                  <p>Rp. 14.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_8.html'">
+                  <img src="../media/Gambar%20Produk/produk-8-b.png" width="128">
+                  <h4>Cabe Rawit</h4>
+                  <p>Rp. 12.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_2.html'">
+                  <img src="../media/Gambar%20Produk/produk-2-b.png" width="128">
+                  <h4>Wortel</h4>
+                  <p>Rp. 12.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_14.html'">
+                  <img src="../media/Gambar%20Produk/produk-14-b.png" width="128">
+                  <h4>Labu</h4>
+                  <p>Rp. 25.000</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Detail Produk Kanan-->
+         <div class="col-2_right">
+            <div class="row">
+
+               <img src="../media/Gambar%20Produk/produk-7-a.png" width=35%>
+
+               <div class="col-2">
+                  <h2>Kecipir</h2>
+                  <p><br></p>
+                  <h4>Rp. 15.000/kg</h4>
+                  <p><br></p>
+                  <p>Dalam 100 gram kecipir mentah mengandung energi sebesar 409 Kkal, Asam Pantotenat 0.795 miligram, Riboflavin 0.45 miligram, dan Vitamin B6 0.175 miligram. Manfaat lain kecipir antara lain sebagai sumber Asam Folat, mencegah diabetes, mengobati anemia serta meningkatkan kekebalan tubuh.
+                  </p>
+                  <p><br></p>
+
+                  <a href="" class="bttn" onclick="tambahProduk(7)">&#43; Tambah ke Keranjang</a>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      <!--Tambah ke Keranjang-->
+      <script src="../keranjang.js"></script>
+
+   </body>
+</html>

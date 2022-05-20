@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Daftar Produk - UBMart E-Commerce</title>
+      <link rel="stylesheet" href="style2.css">
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="../media/logo.png" width="256px">
+            </div>
+            <nav>
+               <ul>
+                  <!-- Menu, Kanan Atas -->
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../produk.html">Belanja</a></li>
+                  <li><a href="../profil.html">Profil</a></li>
+               </ul>
+            </nav>
+            <!-- Button Checkout -->
+            <img src="../media/basket.png" width="30px" onclick="document.location='../keranjang.html'">
+         </div>
+      </div>
+
+
+      <div class="row">
+         <!-- List Produk Kiri-->
+         <div class="col-2_left">
+            <h2 class="title">Produk Lain</h2>
+
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_19.html'">
+                  <img src="../media/Gambar%20Produk/produk-19-b.png" width="128">
+                  <h4>Alpukat</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_23.html'">
+                  <img src="../media/Gambar%20Produk/produk-23-b.png" width="128">
+                  <h4>Jeruk</h4>
+                  <p>Rp. 20.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_22.html'">
+                  <img src="../media/Gambar%20Produk/produk-22-b.png" width="128">
+                  <h4>Stroberi</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_21.html'">
+                  <img src="../media/Gambar%20Produk/produk-21-b.png" width="128">
+                  <h4>Apel</h4>
+                  <p>Rp. 25.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_10.html'">
+                  <img src="../media/Gambar%20Produk/produk-10-b.png" width="128">
+                  <h4>Timun</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_14.html'">
+                  <img src="../media/Gambar%20Produk/produk-14-b.png" width="128">
+                  <h4>Labu Kuning</h4>
+                  <p>Rp. 25.000</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Detail Produk Kanan-->
+         <div class="col-2_right">
+            <div class="row">
+
+               <img src="../media/Gambar%20Produk/produk-15-a.png" width=35%>
+
+               <div class="col-2">
+                  <h2>Pisang</h2>
+                  <p><br></p>
+                  <h4>Rp. 15.000/kg</h4>
+                  <p><br></p>
+                  <p>Pisang Cavendish Sunpride tidak menggunakan rekayasa genetik seperti GMO. Selain itu, demi memastikan tidak ada Residu Pestisida, logam berat yang berbahaya jika dikonsumsi oleh konsumen, Pisang Cavendish Sunpride secara konsisten setiap 6 bulan sekali diuji oleh lembaga SUCOFINDO semua ini untuk menghasilkan produk berkualitas tinggi dengan rasa terbaik yang terjaga keamanan pangannya.</p>
+                  <p><br></p>
+                  <p>Pisang Cavendish tidak hanya terkenal karena rasanya yang lezat tapi juga khasiatnya yang bermanfaat untuk tubuh. Buah ini memiliki banyak kandungan gizi, yaitu riboflavin, mangan, vitamin A, vitamin B6, niacin, serat, protein, vitamin C, besi, kalium, folat, dan magnesium. Dengan melihat beberapa gizi tersebut, sudah jelas jika Pisang Cavendish ini dapat menjadikan tubuh Fruitaholic lebih sehat dan mencegah penyakit menular maupun penyakit dalam.</p>
+                  <p><br></p>
+
+                  <a href="" class="bttn" onclick="tambahProduk(15)">&#43; Tambah ke Keranjang</a>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      <!--Tambah ke Keranjang-->
+      <script src="../keranjang.js"></script>
+
+   </body>
+</html>

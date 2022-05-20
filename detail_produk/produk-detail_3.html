@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Daftar Produk - UBMart E-Commerce</title>
+      <link rel="stylesheet" href="style2.css">
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="../media/logo.png" width="256px">
+            </div>
+            <nav>
+               <ul>
+                  <!-- Menu, Kanan Atas -->
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../produk.html">Belanja</a></li>
+                  <li><a href="../profil.html">Profil</a></li>
+               </ul>
+            </nav>
+            <!-- Button Checkout -->
+            <img src="../media/basket.png" width="30px" onclick="document.location='../keranjang.html'">
+         </div>
+      </div>
+
+
+      <div class="row">
+         <!-- List Produk Kiri-->
+         <div class="col-2_left">
+            <h2 class="title">Produk Lain</h2>
+
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_11.html'">
+                  <img src="../media/Gambar%20Produk/produk-11-b.png" width="128">
+                  <h4>Bawang Bombai</h4>
+                  <p>Rp. 20.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_4.html'">
+                  <img src="../media/Gambar%20Produk/produk-4-b.png" width="128">
+                  <h4>Buncis</h4>
+                  <p>Rp. 20.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_7.html'">
+                  <img src="../media/Gambar%20Produk/produk-7-b.png" width="128">
+                  <h4>Kecipir</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_17.html'">
+                  <img src="../media/Gambar%20Produk/produk-17-b.png" width="128">
+                  <h4>Buah Bit</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_13.html'">
+                  <img src="../media/Gambar%20Produk/produk-13-b.png" width="128">
+                  <h4>Bawang Putih</h4>
+                  <p>Rp. 20.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_12.html'">
+                  <img src="../media/Gambar%20Produk/produk-12-b.png" width="128">
+                  <h4>Bawang Merah</h4>
+                  <p>Rp. 25.000</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Detail Produk Kanan-->
+         <div class="col-2_right">
+            <div class="row">
+
+               <img src="../media/Gambar%20Produk/produk-3-a.png" width=35%>
+
+               <div class="col-2">
+                  <h2>Lobak Putih</h2>
+                  <p><br></p>
+                  <h4>Rp. 15.000/kg</h4>
+                  <p><br></p>
+                  <p>Lobak putih adalah sayuran yang berasal dari negara Tiongkok yang juga memiliki nama lain Daikon atau Lobak Jepang. Dalam 100 gram (gr) sayur lobak, bisa menyumbang sekitar 21 Kalori, 0.9 gr Protein, 0.1 gr Lemak, 4.2 gr Karbohidrat, dan 1.4 gr Serat. </p>
+                  <p><br></p>
+                  <p>Adapun manfaat Lobak Putih antara lain: <br>
+                     - Membantu menurunkan berat badan <br>
+                     - Menjaga kesehatan sistem kardiovaskular <br>
+                     - Menghambat pertumbuhan sel kanker, bahkan mencegahnya <br>
+                     - Menurunkan tekanan darah tinggi <br>
+                     - Mencegah kerusakan organ hati <br>
+                  </p>
+                  <p><br></p>
+
+                  <a href="" class="bttn" onclick="tambahProduk(3)">&#43; Tambah ke Keranjang</a>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      <!--Tambah ke Keranjang-->
+      <script src="../keranjang.js"></script>
+
+   </body>
+</html>

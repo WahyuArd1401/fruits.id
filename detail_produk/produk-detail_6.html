@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Daftar Produk - UBMart E-Commerce</title>
+      <link rel="stylesheet" href="style2.css">
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="../media/logo.png" width="256px">
+            </div>
+            <nav>
+               <ul>
+                  <!-- Menu, Kanan Atas -->
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../produk.html">Belanja</a></li>
+                  <li><a href="../profil.html">Profil</a></li>
+               </ul>
+            </nav>
+            <!-- Button Checkout -->
+            <img src="../media/basket.png" width="30px" onclick="document.location='../keranjang.html'">
+         </div>
+      </div>
+
+
+      <div class="row">
+         <!-- List Produk Kiri-->
+         <div class="col-2_left">
+            <h2 class="title">Produk Lain</h2>
+
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_2.html'">
+                  <img src="../media/Gambar%20Produk/produk-2-b.png" width="128">
+                  <h4>Wortel</h4>
+                  <p>Rp. 12.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_4.html'">
+                  <img src="../media/Gambar%20Produk/produk-4-b.png" width="128">
+                  <h4>Buncis</h4>
+                  <p>Rp. 20.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_10.html'">
+                  <img src="../media/Gambar%20Produk/produk-10-b.png" width="128">
+                  <h4>Timun</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_12.html'">
+                  <img src="../media/Gambar%20Produk/produk-12-b.png" width="128">
+                  <h4>Bawang Merah</h4>
+                  <p>Rp. 25.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_13.html'">
+                  <img src="../media/Gambar%20Produk/produk-13-b.png" width="128">
+                  <h4>Bawang Putih</h4>
+                  <p>Rp. 20.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_8.html'">
+                  <img src="../media/Gambar%20Produk/produk-8-b.png" width="128">
+                  <h4>Cabe Rawit</h4>
+                  <p>Rp. 12.000</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Detail Produk Kanan-->
+         <div class="col-2_right">
+            <div class="row">
+
+               <img src="../media/Gambar%20Produk/produk-6-a.png" width=35%>
+
+               <div class="col-2">
+                  <h2>Tomat</h2>
+                  <p><br></p>
+                  <h4>Rp. 15.000/kg</h4>
+                  <p><br></p>
+                  <p>Tiap 100 gram tomat mengandung Kalori 20 kal, Protein 1 gram, Lemak 0,3 gram, Karbohidrat 4,2 gram, Kalsium 5 miligram, Karoten (vitamin A) 1500 SI, Thiamin (vitamin B) 60 mikrogram, Asam Askorbat (vitamin C) 40 miligram, Fosfor 27 miligram, Zat Besi 0,5 miligram, dan Potassium 360 miligram.</p>
+                  <p><br></p>
+                  <p>Adapun manfaat Tomat antara lain: <br>
+                     - Memperlancar Metabolisme <br>
+                     - Mencegah Resiko Peradangan di Wajah <br>
+                     - Mencegah penuaan dini <br>
+                     - Mengurangi risiko penyakit kanker <br>
+                     - Baik untuk kesehatan jantung <br>
+                  </p>
+                  <p><br></p>
+
+                  <a href="" class="bttn" onclick="tambahProduk(6)">&#43; Tambah ke Keranjang</a>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      <!--Tambah ke Keranjang-->
+      <script src="../keranjang.js"></script>
+
+   </body>
+</html>

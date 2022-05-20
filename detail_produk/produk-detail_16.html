@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Daftar Produk - UBMart E-Commerce</title>
+      <link rel="stylesheet" href="style2.css">
+      <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <img src="../media/logo.png" width="256px">
+            </div>
+            <nav>
+               <ul>
+                  <!-- Menu, Kanan Atas -->
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../produk.html">Belanja</a></li>
+                  <li><a href="../profil.html">Profil</a></li>
+               </ul>
+            </nav>
+            <!-- Button Checkout -->
+            <img src="../media/basket.png" width="30px" onclick="document.location='../keranjang.html'">
+         </div>
+      </div>
+
+
+      <div class="row">
+         <!-- List Produk Kiri-->
+         <div class="col-2_left">
+            <h2 class="title">Produk Lain</h2>
+
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_23.html'">
+                  <img src="../media/Gambar%20Produk/produk-23-b.png" width="128">
+                  <h4>Jeruk</h4>
+                  <p>Rp. 20.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_20.html'">
+                  <img src="../media/Gambar%20Produk/produk-20-b.png" width="128">
+                  <h4>Pir</h4>
+                  <p>Rp. 18.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_21.html'">
+                  <img src="../media/Gambar%20Produk/produk-21-b.png" width="128">
+                  <h4>Apel</h4>
+                  <p>Rp. 25.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_2.html'">
+                  <img src="../media/Gambar%20Produk/produk-2-b.png" width="128">
+                  <h4>Wortel</h4>
+                  <p>Rp. 12.000</p>
+               </div>
+            </div>
+            <div class="row_detail-produk">
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_10.html'">
+                  <img src="../media/Gambar%20Produk/produk-10-b.png" width="128">
+                  <h4>Timun</h4>
+                  <p>Rp. 15.000</p>
+               </div>
+               <div class="col-2_detail-produk" onclick="document.location='./produk-detail_18.html'">
+                  <img src="../media/Gambar%20Produk/produk-18-b.png" width="128">
+                  <h4>Belimbing</h4>
+                  <p>Rp. 20.000</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- Detail Produk Kanan-->
+         <div class="col-2_right">
+            <div class="row">
+
+               <img src="../media/Gambar%20Produk/produk-16-a.png" width=35%>
+
+               <div class="col-2">
+                  <h2>Lemon</h2>
+                  <p><br></p>
+                  <h4>Rp. 18.000/500gr</h4>
+                  <p><br></p>
+                  <p>Selain vitamin C, lemon juga mengandung vitamin B6 dan mineral kalium. Vitamin B6 berperan dalam pengubahan makanan menjadi energi. Sementara itu, kalium dalam kadar yang cukup akan membantu mencegah tekanan darah tinggi dan menyehatkan jantung.</p>
+                  <p><br></p>
+
+                  <a href="" class="bttn" onclick="tambahProduk(16)">&#43; Tambah ke Keranjang</a>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+      <!--Tambah ke Keranjang-->
+      <script src="../keranjang.js"></script>
+
+   </body>
+</html>
